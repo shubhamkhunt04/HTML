@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>JS Calculater</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div>
+        <p id="para">JS CALCULATOR</p>
+        <form name="form">
+            <input type="text" name="ans" id="inputnumber">
+            <br><br>
+
+            <input type="button" value=" 7 " onclick="form.ans.value+='7'">
+            <input type="button" value=" 8 " onclick="form.ans.value+='8'">
+            <input type="button" value=" 9 " onclick="form.ans.value+='9'">
+            <input type="button" value=" / " onclick="form.ans.value+='/'">
+            <input type="button" value=" CE " onclick="form.ans.value=''">
+            <br><br>
+            <input type="button" value=" 4 " onclick="form.ans.value+='4'">
+            <input type="button" value=" 5 " onclick="form.ans.value+='5'">
+            <input type="button" value=" 6 " onclick="form.ans.value+='6'">
+            <input type="button" value=" * " onclick="form.ans.value+='*'">
+            <input type="button" value=" % " onclick="form.ans.value+='%'">
+            <br><br>
+            <input type="button" value=" 1 " onclick="form.ans.value+='1'">
+            <input type="button" value=" 2 " onclick="form.ans.value+='2'">
+            <input type="button" value=" 3 " onclick="form.ans.value+='3'">
+            <input type="button" value=" + " onclick="form.ans.value+='+'">
+            <input type="button" value=" - " onclick="form.ans.value+='-'">
+            <br><br>
+            <input type="button" value=" 0 " onclick="form.ans.value+='0'">
+            <input type="button" value=" 00 " onclick="form.ans.value+='00'">
+            <input type="button" value=" . " onclick="form.ans.value+='.'">
+            <input type="button" value=" = " onclick="form.ans.value=eval(form.ans.value)">
+            <input type="button" value=" $" onclick="form.ans.value='Calculater'">
+        </form>
+    </div>
+</body>
+
+</html>

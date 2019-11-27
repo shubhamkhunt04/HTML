@@ -1,0 +1,57 @@
+<html>
+
+<head></head>
+
+<body id="b1">
+    <script>
+        function effect() {
+            var x = document.getElementById("h");
+            var i=confirm(x);
+            if(i==true)
+            {
+                var t=document.getElementById("b1");
+                t.style.backgroundColor="lightblue";
+            }
+            else
+            {
+                var t=document.getElementById("b1");
+                t.style.backgroundColor="gray";
+            }
+        }
+        function effect2() {
+            var a = document.getElementById("h");
+            var condition = confirm(a);
+            if (condition == true) {
+                var p = document.getElementById("p1");
+                p.style.backgroundColor = "lightgreen";
+            }
+            else {
+                var p = document.getElementById("p1");
+                p.style.backgroundColor = "lightpink";
+            }
+        }
+        function effect3() {
+            var q = document.getElementById("p2");
+            q.innerHTML = "this paragraph is change by javascript";
+            q.style.textDecoration = "underline";
+            q.style.fontFamily = "calibri";
+            q.style.fontSize = "20px"
+        }
+    </script>
+    <script>
+        effect();
+    </script>
+
+    <h1 id=h>welcome to the page</h1>
+    <button onclick="effect()">click me bro...</button>
+    <script>
+        console.log("working")
+    </script>
+    <button onclick="effect2()">click me bro...for 2nd effect</button>
+    <p id=p1>this is paragraph</p>
+
+    <p id=p2>this is another paragraph</p>
+    <button onclick="effect3()">click me bro...for 3rd effect</button>
+</body>
+
+</html>
